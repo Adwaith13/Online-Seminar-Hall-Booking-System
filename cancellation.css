@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(24, 24, 233, 0.7));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+} 
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #22b7f1;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+
+
+.form-box{   
+    max-width: 500px;
+    border: 3px solid #f1eded;
+    margin: 10% auto 0;
+    text-align: center;
+    display: center;
+}
+.form-box p{
+    color: white;
+}
+
+.form{
+    text-align: center;
+    color: rgb(222, 223, 238);
+    width: 75%;
+    margin: 11px;
+    padding: 0 20px 20px;
+    font-size: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.form label{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 17px; 
+}
+
+input::placeholder{
+    color: white !important;
+}
+
+.form-control{
+    font-size: 12px!important;
+    border-radius: 0!important;
+    color: white!important;
+    background: transparent!important;
+    box-shadow: none!important;
+}
+
+.btn1{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(221, 214, 214);
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.btn1:hover{
+    border: 1px solid rgb(245, 241, 241);
+    background: chocolate;
+    transition: 0.5s;
+}
